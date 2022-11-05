@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const NotFound = () => (
+  <>
+    <div className="notFound">
+
+      <div className='stars'></div>
+      <div className='stars2'></div>
+      <div className='stars3'></div>
+      <div className='title'>
+        <span className="text404">
+          404
+        </span>
+        <br />
+        <span>
+          PAGE NOT FOUND
+        </span>
+      </div>
     </div>
-  );
-}
 
-export default App;
+  </>
+
+);
+
+export default NotFound;
